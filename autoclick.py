@@ -8,7 +8,6 @@ from tkinter import ttk
 import threading
 import time
 import json
-import webbrowser
 import keyboard
 
 
@@ -193,17 +192,6 @@ class AutoClickerApp:
         edit_menu.add_command(label="Add Option", command=self.show_option_dialog)
 
         edit_menu.add_command(label="Clear All Options", command=self.clear_all_options)
-
-        #help menu
-        
-
-    def open_help(self):
-        webbrowser.open('index.html')
-    
-
-    def open_report_idea(self):
-        webbrowser.open('report_idea.html')
-
 
     def toggle_auto_with_shortcut(self):
         self.toggle_auto()
